@@ -1,14 +1,12 @@
 {
-  "buildCommand": "echo 'Building...'",
+  "buildCommand": "echo 'Building aboutme portfolio...'",
   "outputDirectory": ".",
+  "public": false,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/aboutme.html"
-    },
-    {
-      "source": "/:path((?!image|favicon).*)",
+      "source": "/(.*)",
       "destination": "/aboutme.html"
     }
-  ]
+  ],
+  "cleanUrls": true
 }
