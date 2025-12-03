@@ -1,0 +1,14 @@
+{
+  "buildCommand": "echo 'Building...'",
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/aboutme.html"
+    },
+    {
+      "source": "/:path((?!image|favicon).*)",
+      "destination": "/aboutme.html"
+    }
+  ]
+}
